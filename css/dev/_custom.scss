@@ -1,0 +1,72 @@
+//custom css goes here
+
+/*
+
+Contents
+================================
+
+1. Imports
+2. Navigation
+3. Pages
+4. Shared Styles
+
+================================
+
+*/
+
+// 1. Imports
+// --------------------------------------------------
+
+
+// 2. Navigation
+// --------------------------------------------------
+
+
+
+// 3. Pages
+// --------------------------------------------------
+
+@mixin linear-gradient($fromColor, $toColor) {
+  background-color: $toColor; /* Fallback Color */
+  background-image: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, $fromColor, $toColor); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, $fromColor, $toColor); /* FF3.6 */
+  background-image:     -ms-linear-gradient(top, $fromColor, $toColor); /* IE10 */
+  background-image:      -o-linear-gradient(top, $fromColor, $toColor); /* Opera 11.10+ */
+  background-image:         linear-gradient(top, $fromColor, $toColor);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+}
+
+body {
+    /*@include linear-gradient($red, white);*/
+    color: $grayCharcoal;
+    background-repeat:no-repeat;
+}
+
+.well {
+    background-color: rgba(255,255,255,0.8);
+}
+
+.contact {
+    text-align: left;
+    margin-left: 18px;
+}
+
+.container {
+    width: 380px;
+}
+
+.circular {
+	width: 250px;
+	height: 250px;
+	border-radius: 125px;
+	-webkit-border-radius: 125px;
+	-moz-border-radius: 125px;
+	background: url('../img/rexProctor.jpg') no-repeat;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+	}
+
+// 4. Shared Styles
+// --------------------------------------------------
