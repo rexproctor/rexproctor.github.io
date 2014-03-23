@@ -37,35 +37,46 @@ Contents
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
 }
 
+@media screen and (max-width: 768px) {
 body {
+    min-height: 1240px;
     /*@include linear-gradient($red, white);*/
     color: $grayCharcoal;
     background-repeat:no-repeat;
 }
+}
 
 .well {
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,1);
+    border: none;
+    padding: 4px;
+    box-shadow: none;
 }
 
 .contact {
     text-align: left;
-    margin-left: 18px;
+    margin-left: 14px;
+}
+
+h4 {
+    font-size: 16px;
 }
 
 .container {
-    width: 380px;
+    width: 300px;
 }
 
 .circular {
-	width: 250px;
-	height: 250px;
+	width: 240px;
+	height: 240px;
 	border-radius: 125px;
-	-webkit-border-radius: 125px;
-	-moz-border-radius: 125px;
+	-webkit-border-radius: 120px;
+	-moz-border-radius: 120px;
 	background: url('../img/rexProctor.jpg') no-repeat;
     background-position: center;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 4px;
 	}
 
 // 4. Shared Styles

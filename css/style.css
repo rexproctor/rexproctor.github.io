@@ -20,4 +20,4 @@ small,.small{font-size:85%}cite{font-style:normal}.text-left{text-align:left}.te
  * Color Me SASS v1.0
  * Built and Designed by Richard Bray
  *
- */body{color:#36454f;background-repeat:no-repeat}.well{background-color:rgba(255,255,255,0.8)}.contact{text-align:left;margin-left:18px}.container{width:380px}.circular{width:250px;height:250px;border-radius:125px;-webkit-border-radius:125px;-moz-border-radius:125px;background:url("../img/rexProctor.jpg") no-repeat;background-position:center;margin-left:auto;margin-right:auto}
+ */@media screen and (max-width: 768px){body{min-height:1240px;color:#36454f;background-repeat:no-repeat}}.well{background-color:#fff;border:none;padding:4px;box-shadow:none}.contact{text-align:left;margin-left:14px}h4{font-size:16px}.container{width:300px}.circular{width:240px;height:240px;border-radius:125px;-webkit-border-radius:120px;-moz-border-radius:120px;background:url("../img/rexProctor.jpg") no-repeat;background-position:center;margin-left:auto;margin-right:auto;margin-top:4px}
